@@ -14,6 +14,6 @@ USER ansible
 
 # copy files
 COPY ./file/ansible.cfg /etc/ansible/ansible.cfg
-COPY --chown=ansible:ansible ./file/play.sh /root/play.sh
+COPY --chown=ansible:ansible ./file/entry.sh /root/entry.sh
 
 ENTRYPOINT ["/bin/sh", "/root/entry.sh"]
