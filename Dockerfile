@@ -11,6 +11,7 @@ RUN apk add --no-cache python2 curl gcc make libffi-dev python2-dev musl-dev ope
     adduser -D ansible
 
 USER ansible
+WORKDIR /home/ansible
 
 # copy files
 COPY ./file/ansible.cfg /etc/ansible/ansible.cfg
