@@ -8,7 +8,7 @@ RUN apk add --no-cache python2 curl gcc make libffi-dev python2-dev musl-dev ope
     pip install ansible awscli && \
     apk del --purge gcc make && \
     rm -rf /root/.cache/pip && \
-    adduser -S ansible
+    adduser -D ansible
 
 USER ansible
 
